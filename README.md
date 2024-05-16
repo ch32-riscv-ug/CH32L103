@@ -18,11 +18,11 @@
 <table>
     <thead>
         <tr>
-            <th>CH32<br>L103<br>F8P6<br>(TSSOP20)</th>
-            <th>CH32<br>L103<br>F8U6<br>(QFN20)</th>
-            <th>CH32<br>L103<br>G8R6<br>(QSOP28)</th>
-            <th>CH32<br>L103<br>K8U6<br>(QFN32)</th>
-            <th>CH32<br>L103<br>C8T6<br>(LQFP48)</th>
+            <th>CH32<br>L103<br>F8P6<br>(TSSOP<br>20)</th>
+            <th>CH32<br>L103<br>F8U6<br>(QFN<br>20)</th>
+            <th>CH32<br>L103<br>G8R6<br>(QSOP<br>28)</th>
+            <th>CH32<br>L103<br>K8U6<br>(QFN<br>32)</th>
+            <th>CH32<br>L103<br>C8T6<br>(LQFP<br>48)</th>
             <th>Pin name</th>
             <th>Pin type</th>
             <th>I/O<br>structure</th>
