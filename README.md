@@ -1,8 +1,8 @@
 # CH32L103
 
-| SWCLK | SWDIO | TX1 | RX1  | TX2 | RX2 | TX3  | RX3  |
-|-------|-------|-----|------|-----|-----|------|------|
-| PA14  | PA13  | PA9 | PA10 | PA2 | PA3 | PB10 | PB11 |
+| SWCLK | SWDIO | TX1 | RX1  | TX2 | RX2 | TX3  | RX3  | TX4  | RX4  |
+|-------|-------|-----|------|-----|-----|------|------|------|------|
+| PA14  | PA13  | PA9 | PA10 | PA2 | PA3 | PB10 | PB11 | PB0  | PB1  |
 
 ## Official Site
 - https://www.wch-ic.com/products/CH32L103.html
@@ -11,471 +11,471 @@
 ## System Block Diagram
 <img src="image/system_CH32L103.png" />
 
-### CH32V103
+### CH32L03
 <img src="image/product_CH32L103.jpg" />
 
 ## GPIO Definitions
 <table>
     <thead>
         <tr>
-            <th>QFN20</th>
-            <th>QSOP28</th>
-            <th>QFN32</th>
-            <th>LQFP48</th>
-            <th>TSSOP20</th>
+            <th>CH32L103<br>F8P6<br>(TSSOP20)</th>
+            <th>CH32L103<br>F8U6<br>(QFN20)</th>
+            <th>CH32L103<br>G8R6<br>(QSOP28)</th>
+            <th>CH32L103<br>K8U6<br>(QFN32)</th>
+            <th>CH32L103<br>C8T6<br>(LQFP48)</th>
             <th>Pin name</th>
             <th>Pin type</th>
             <th>I/O<br>structure</th>
             <th>Main function<br>(after reset)</th>
             <th>Note</th>
-        </tr>
-    </thead>
+       </tr>
+   </thead>
     <tbody align="center">
         <tr>
+            <td>6</td>
             <td>1</td>
             <td>9</td>
             <td>6</td>
             <td>10</td>
-            <td>6</td>
             <td>PA0-WKUP</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PA0</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>7</td>
             <td>2</td>
             <td>10</td>
             <td>7</td>
             <td>11</td>
-            <td>7</td>
             <td>PA1</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PA1</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>8</td>
             <td>3</td>
             <td>11</td>
             <td>8</td>
             <td>12</td>
-            <td>8</td>
             <td>PA2</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PA2</td>
             <td>TX2</td>
-        </tr>
+       </tr>
         <tr>
+            <td>9</td>
             <td>4</td>
             <td>12</td>
             <td>9</td>
             <td>13</td>
-            <td>9</td>
             <td>PA3</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PA3</td>
             <td>RX2</td>
-        </tr>
+       </tr>
         <tr>
+            <td>10</td>
             <td>5</td>
             <td>13</td>
             <td>10</td>
             <td>14</td>
-            <td>10</td>
             <td>PA4</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PA4</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>11</td>
             <td>6</td>
             <td>14</td>
             <td>11</td>
             <td>15</td>
-            <td>11</td>
             <td>PA5</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PA5</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>12</td>
             <td>20</td>
             <td>15</td>
             <td>12</td>
             <td>15</td>
-            <td>12</td>
             <td>PA6</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PA6</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>13</td>
             <td>7</td>
             <td>16</td>
             <td>13</td>
             <td>16</td>
-            <td>13</td>
             <td>PA7</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PA7</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>-</td>
             <td>14</td>
             <td>24</td>
             <td>18</td>
             <td>29</td>
-            <td>-</td>
             <td>PA8</td>
             <td>I/O</td>
             <td>FT</td>
             <td>PA8</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>-</td>
             <td>15</td>
             <td>25</td>
             <td>19</td>
             <td>30</td>
-            <td>-</td>
             <td>PA9</td>
             <td>I/O</td>
             <td>FT</td>
             <td>PA9</td>
             <td>TX1</td>
-        </tr>
+       </tr>
         <tr>
+            <td>-</td>
             <td>16</td>
             <td>26</td>
             <td>20</td>
             <td>31</td>
-            <td>-</td>
             <td>PA10</td>
             <td>I/O</td>
             <td>FT</td>
             <td>PA10</td>
             <td>RX10</td>
-        </tr>
+       </tr>
         <tr>
+            <td>17</td>
             <td>17</td>
             <td>27</td>
             <td>21</td>
             <td>32</td>
-            <td>17</td>
             <td>PA11</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PA11</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>18</td>
             <td>16</td>
             <td>28</td>
             <td>22</td>
             <td>33</td>
-            <td>18</td>
             <td>PA12</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PA12</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>19</td>
             <td>17</td>
             <td>28</td>
             <td>23</td>
             <td>34</td>
-            <td>19</td>
             <td>PA13</td>
             <td>I/O</td>
             <td>FT</td>
             <td>SWDIO</td>
             <td>SWDIO</td>
-        </tr>
+       </tr>
         <tr>
+            <td>20</td>
             <td>16</td>
             <td>1</td>
             <td>24</td>
             <td>37</td>
-            <td>20</td>
             <td>PA14</td>
             <td>I/O</td>
             <td>FT</td>
             <td>SWCLK</td>
             <td>SWCLK</td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>-</td>
             <td>25</td>
             <td>38</td>
-            <td></td>
             <td>PA15</td>
             <td>I/O</td>
             <td>FT</td>
             <td>PA15</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>8</td>
             <td>17</td>
             <td>14</td>
             <td>16</td>
-            <td></td>
             <td>PB0</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PB0</td>
             <td>TX4</td>
-        </tr>
+       </tr>
         <tr>
+            <td>14</td>
             <td>9</td>
             <td>18</td>
             <td>15</td>
             <td>17</td>
-            <td>14</td>
             <td>PB1</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PB1</td>
             <td>RX4</td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>-</td>
             <td>16</td>
             <td>20</td>
-            <td></td>
             <td>PB2</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB2/BOOT1</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>4</td>
             <td>26</td>
             <td>39</td>
-            <td></td>
             <td>PB3</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB3</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>-</td>
             <td>27</td>
             <td>40</td>
-            <td></td>
             <td>PB4</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB4</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>1</td>
             <td>28</td>
             <td>41</td>
-            <td></td>
             <td>PB5</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB5</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>19</td>
             <td>11</td>
             <td>2</td>
             <td>29</td>
             <td>42</td>
-            <td>19</td>
             <td>PB6</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB6</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>20</td>
             <td>18</td>
             <td>3</td>
             <td>30</td>
             <td>43</td>
-            <td>20</td>
             <td>PB7</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB7</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>5</td>
             <td>32</td>
             <td>45</td>
-            <td></td>
             <td>PB8</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB8</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>-</td>
             <td>31</td>
             <td>46</td>
-            <td></td>
             <td>PB9</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB9</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>-</td>
             <td>9</td>
             <td>18</td>
             <td>-</td>
             <td>21</td>
-            <td>-</td>
             <td>PB10</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB10</td>
             <td>TX3</td>
-        </tr>
+       </tr>
         <tr>
+            <td>-</td>
             <td>10</td>
             <td>19</td>
             <td>-</td>
             <td>22</td>
-            <td>-</td>
             <td>PB11</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB11</td>
             <td>RX3</td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>20</td>
             <td>-</td>
             <td>25</td>
-            <td></td>
             <td>PB12</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB12</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>-</td>
             <td>11</td>
             <td>21</td>
             <td>-</td>
             <td>26</td>
-            <td>-</td>
             <td>PB13</td>
             <td>I/O</td>
             <td>FT</td>
             <td>PB13</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>-</td>
             <td>12</td>
             <td>22</td>
             <td>-</td>
             <td>27</td>
-            <td>-</td>
             <td>PB14</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB14</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>-</td>
             <td>13</td>
             <td>23</td>
             <td>17</td>
             <td>28</td>
-            <td>-</td>
             <td>PB15</td>
             <td>I/O/A</td>
             <td>FT</td>
             <td>PB15</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
             <td>2</td>
-            <td></td>
             <td>PC13-TAMPERRTC</td>
             <td>I/O</td>
             <td>-</td>
             <td>PC13</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>-</td>
             <td>2</td>
             <td>3</td>
-            <td></td>
             <td>PC14-OSC32_IN</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PC14</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td></td>
             <td>-</td>
             <td>-</td>
             <td>3</td>
             <td>4</td>
-            <td></td>
             <td>PC15-OSC32_OUT</td>
             <td>I/O/A</td>
             <td></td>
             <td>PC15</td>
             <td></td>
-        </tr>
+       </tr>
         <tr>
+            <td>2</td>
             <td>-</td>
             <td>8</td>
             <td>4</td>
             <td>5</td>
-            <td>2</td>
             <td>OSC_IN</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>OSC_IN</td>
             <td>(PD0)</td>
-        </tr>
+       </tr>
         <tr>
+            <td>3</td>
             <td>-</td>
             <td>-</td>
             <td>5</td>
             <td>6</td>
-            <td>3</td>
             <td>OSC_OUT</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>OSC_OUT</td>
             <td>(PD1)</td>
-        </tr>
-    </tbody>
+       </tr>
+   </tbody>
 </table>
 
 ## System Architecture
