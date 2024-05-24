@@ -8,6 +8,10 @@
 - https://www.wch-ic.com/products/CH32L103.html
 - https://www.wch.cn/products/CH32L103.html
 
+## Datasheet
+- en [[CH32L103DS0.PDF](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF)] [[CH32L103RM.PDF](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103RM.PDF)]
+- zh [[CH32L103DS0.PDF](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF)] [[CH32L103RM.PDF](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103RM.PDF)]
+
 ## System Block Diagram
 <img src="image/system_CH32L103.png" />
 
