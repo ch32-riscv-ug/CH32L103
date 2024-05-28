@@ -22,15 +22,15 @@
 <table>
     <thead>
         <tr>
-            <th>CH32<br>L103<br>F8P6<br>(TSSOP<br>20)</th>
-            <th>CH32<br>L103<br>F8U6<br>(QFN<br>20)</th>
-            <th>CH32<br>L103<br>G8R6<br>(QSOP<br>28)</th>
-            <th>CH32<br>L103<br>K8U6<br>(QFN<br>32)</th>
-            <th>CH32<br>L103<br>C8T6<br>(LQFP<br>48)</th>
+            <th>CH32&#8203;L103&#8203;F8P6&#8203;(TSSOP&#8203;20)</th>
+            <th>CH32&#8203;L103&#8203;F8U6&#8203;(QFN&#8203;20)</th>
+            <th>CH32&#8203;L103&#8203;G8R6&#8203;(QSOP&#8203;28)</th>
+            <th>CH32&#8203;L103&#8203;K8U6&#8203;(QFN&#8203;32)</th>
+            <th>CH32&#8203;L103&#8203;C8T6&#8203;(LQFP&#8203;48)</th>
             <th>Pin name</th>
             <th>Pin type</th>
-            <th>I/O<br>structure</th>
-            <th>Main function<br>(after reset)</th>
+            <th>I/O structure</th>
+            <th>Main function&#8203;(after reset)</th>
             <th>Note</th>
        </tr>
    </thead>
