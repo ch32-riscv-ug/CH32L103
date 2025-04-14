@@ -15,13 +15,13 @@ cd ..
 # https://www.wch.cn/products/CH32L103.html
 cd datasheet_zh
 # https://www.wch.cn/downloads/CH32L103DS0_PDF.html
-curl -z CH32L103DS0.PDF -o CH32L103DS0.PDF https://www.wch.cn/downloads/file/452.html
+curl -z CH32L103DS0.PDF -o CH32L103DS0.PDF https://www.wch.cn/download/file?id=452
 # https://www.wch.cn/downloads/CH32L103RM_PDF.html
-curl -z CH32L103RM.PDF -o CH32L103RM.PDF https://www.wch.cn/downloads/file/453.html
+curl -z CH32L103RM.PDF -o CH32L103RM.PDF https://www.wch.cn/download/file?id=453
 cd ..
 
 # https://www.wch.cn/downloads/CH32L103EVT_ZIP.html
-curl -z CH32L103EVT.ZIP -o CH32L103EVT.ZIP https://www.wch.cn/downloads/file/455.html
+curl -z CH32L103EVT.ZIP -o CH32L103EVT.ZIP https://www.wch.cn/download/file?id=455
 rm -rfv EVT
 unzip -O GB2312 *.ZIP
 
