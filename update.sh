@@ -7,9 +7,9 @@ git pull
 # https://www.wch-ic.com/products/CH32L103.html
 cd datasheet_en
 # https://www.wch-ic.com/downloads/CH32L103DS0_PDF.html
-curl -z CH32L103DS0.PDF -o CH32L103DS0.PDF https://www.wch-ic.com/downloads/file/386.html
+curl -z CH32L103DS0.PDF -o CH32L103DS0.PDF https://www.wch-ic.com/download/file?id=386
 # https://www.wch-ic.com/downloads/CH32L103RM_PDF.html
-curl -z CH32L103RM.PDF -o CH32L103RM.PDF https://www.wch-ic.com/downloads/file/387.html
+curl -z CH32L103RM.PDF -o CH32L103RM.PDF https://www.wch-ic.com/download/file?id=387
 cd ..
 
 # https://www.wch.cn/products/CH32L103.html
