@@ -23,8 +23,8 @@ u8 Verify_Star_flag = 0;
 u8 Fast_Program_Buf[390];
 u32 CodeLen = 0;
 u8 End_Flag = 0;
-u8 EP2_Rx_Buffer[USBD_DATA_SIZE+4];
-#define  isp_cmd_t   ((isp_cmd  *)EP2_Rx_Buffer)
+u8 IAP_Deal_Buf[USBD_DATA_SIZE+4];
+#define  isp_cmd_t   ((isp_cmd  *)IAP_Deal_Buf)
 
 /*********************************************************************
  * @fn      CH32_IAP_Program

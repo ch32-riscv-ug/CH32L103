@@ -1,8 +1,8 @@
 /********************************** (C) COPYRIGHT *******************************
  * File Name          : main.c
  * Author             : WCH
- * Version            : V1.0.0
- * Date               : 2024/11/05
+ * Version            : V1.0.1
+ * Date               : 2026/06/05
  * Description        : Main program body.
  *********************************************************************************
  * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
@@ -80,7 +80,8 @@ int main(void)
 
     /* Configure unused GPIO as IPD to reduce power consumption */
     RCC_PB2PeriphClockCmd(RCC_PB2Periph_GPIOA|RCC_PB2Periph_GPIOB|
-            RCC_PB2Periph_GPIOC|RCC_PB2Periph_GPIOD, ENABLE);
+            RCC_PB2Periph_GPIOC|RCC_PB2Periph_GPIOD|RCC_PB2Periph_AFIO, ENABLE);
+    GPIO_PinRemapConfig(GPIO_Remap_SWJ_Disable, ENABLE); 
     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_All;
     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPD;
 

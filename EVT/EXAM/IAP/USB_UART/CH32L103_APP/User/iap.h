@@ -71,7 +71,7 @@ extern u8 EP2_OUT_Flag;
 extern u16 EP2_Rx_Cnt;
 extern u8 EP2_Tx_Buffer[2];
 extern u16 EP2_Tx_Cnt;
-extern u8 EP2_Rx_Buffer[USBD_DATA_SIZE+4];
+extern u8 IAP_Deal_Buf[USBD_DATA_SIZE+4];
 extern u8 End_Flag;
 
 u8 RecData_Deal(void);

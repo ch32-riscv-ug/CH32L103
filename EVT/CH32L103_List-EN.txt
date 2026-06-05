@@ -1,5 +1,5 @@
 
-Nanjing Qinheng Microelectronics Co., Ltd. 2026.01
+Nanjing Qinheng Microelectronics Co., Ltd. 2026.06
 Please check our website for the latest information.
 https://wch-ic.com
 
@@ -159,5 +159,7 @@ Directory
   |      |      |      |      |      |-- Host_Udisk：USB host operation USB disk routine 
   |      |      |      |-- USBPD
   |      |      |      |      |-- USBPD_SNK:PD SNK routine
-  |      |      |      |      |-- USBPD_SRC:PD SRC routine   
+  |      |      |      |      |-- USBPD_SRC:PD SRC routine
+  |      |      |      |      |-- USBPD_CH211：PD + CH211 routine 
+  |      |      |      |      |      |-- SCH: schematic diagram  
   |      |      |      |-- WWDG：window watchdog routine

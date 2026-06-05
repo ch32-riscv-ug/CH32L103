@@ -1,8 +1,8 @@
 /********************************** (C) COPYRIGHT *******************************
  * File Name          : system_ch32l103.c
  * Author             : WCH
- * Version            : V1.0.1
- * Date               : 2026/03/11
+ * Version            : V1.0.2
+ * Date               : 2026/06/05
  * Description        : Device Peripheral Access Layer System Source File.
  *********************************************************************************
  * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
