@@ -2,8 +2,10 @@ name: update
 
 on:
   schedule:
-    # Daily at 21:17 UTC (06:17 JST) — staggered to spare the weak WCH server
-    - cron: '17 21 * * *'
+    # Daily 17:37 UTC (01:37 CST China / 02:37 JST) - China late-night.
+    # GitHub may delay runs by hours; scheduled early so it stays before
+    # China's heavy morning hours.
+    - cron: '37 17 * * *'
   workflow_dispatch:
 
 # Write permission is required to commit/push updated files.
