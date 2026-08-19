@@ -4,10 +4,10 @@
 
 ## Series
 
-| Series | Core | ISA | Flash | SRAM | Packages | Products | Official |
-|---|---|---|---|---|---|---|---|
-| **CH32L103** | QingKe V4C | RV32IMAC | 64K | 20K | LQFP48,QFN20,QFN32,QSOP28,TSSOP20 | 6 | [en](https://www.wch-ic.com/products/CH32L103.html) / [zh](https://www.wch.cn/products/CH32L103.html) |
-| **CH32M103** | QingKe V4C | RV32IMAC | 64K | 20K | QSOP28 | 1 | [en](https://www.wch-ic.com/products/CH32M103.html) / [zh](https://www.wch.cn/products/CH32M103.html) |
+| Series | Core | ISA | Flash | SRAM | Max clock | VDD | Packages | Products | Official |
+|---|---|---|---|---|---|---|---|---|---|
+| **CH32L103** | QingKe V4C | RV32IMAC | 64K | 20K | 96 MHz | 1.8-3.6V | LQFP48,QFN20,QFN32,QSOP28,TSSOP20 | 6 | [en](https://www.wch-ic.com/products/CH32L103.html) / [zh](https://www.wch.cn/products/CH32L103.html) |
+| **CH32M103** | QingKe V4C | RV32IMAC | 64K | 20K | 96 MHz | 1.8-3.6V | QSOP28 | 1 | [en](https://www.wch-ic.com/products/CH32M103.html) / [zh](https://www.wch.cn/products/CH32M103.html) |
 
 ## Debug / serial defaults
 
@@ -214,6 +214,10 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | CH32M103 | USART2_RM | PCFR1 | 3 | 0;1;3 | 0 |
 
 </details>
+
+## Errata
+
+- CH32L103K8U and CH32L103F8U6 have a built-in 5.1kΩ pull-down resistor that is forced on in standby mode; standby current increases by about 5uA and the pull-down configuration note in the datasheet is not needed. *(applies: CH32L103; 5th-to-last digit of lot number = 1 (CH32L103K8U/F8U6))*
 
 ## Diagrams
 
