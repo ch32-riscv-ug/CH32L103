@@ -4,7 +4,7 @@
 
 ## Series
 
-| Series | Core | ISA | Flash | SRAM | Max clock | VDD | Packages | Products | Official |
+| Series | Core | ISA | Flash | SRAM | Clock | VDD | Packages | Products | Official |
 |---|---|---|---|---|---|---|---|---|---|
 | **CH32L103** | QingKe V4C | RV32IMAC | 64K | 20K | 96 MHz | 1.8-3.6V | LQFP48,QFN20,QFN32,QSOP28,TSSOP20 | 6 | [en](https://www.wch-ic.com/products/CH32L103.html) / [zh](https://www.wch.cn/products/CH32L103.html) |
 | **CH32M103** | QingKe V4C | RV32IMAC | 64K | 20K | 96 MHz | 1.8-3.6V | QSOP28 | 1 | [en](https://www.wch-ic.com/products/CH32M103.html) / [zh](https://www.wch.cn/products/CH32M103.html) |
@@ -23,6 +23,19 @@
 | CH32L103DS0.PDF | datasheet | [page](https://www.wch-ic.com/downloads/CH32L103DS0_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF) v2.1 | [page](https://www.wch.cn/downloads/CH32L103DS0_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF) v2.1 |
 | CH32L103RM.PDF | reference-manual | [page](https://www.wch-ic.com/downloads/CH32L103RM_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103RM.PDF) v2.2 | [page](https://www.wch.cn/downloads/CH32L103RM_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103RM.PDF) v2.2 |
 | CH32L103EVT.ZIP | evt | - | [page](https://www.wch.cn/downloads/CH32L103EVT_ZIP.html) [mirror](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT) v1.9 |
+
+## Pinouts
+
+Pinout drawings are in the datasheet (chapter *Pinouts*):
+
+| Package | Products | Datasheet | Outline |
+|---|---|---|---|
+| LQFP48 | CH32L103C8T6 | [en](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_LQFP48.png) |
+| TSSOP20 | CH32L103F8P6 | [en](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_TSSOP20.png) |
+| QFN20 | CH32L103F8U6 | [en](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QFN20.png) |
+| QSOP28 | CH32L103G8R6 | [en](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QSOP28.png) |
+| QFN32 | CH32L103K8U6, CH32L103K8U7 | [en](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QFN32.png) |
+| QSOP28 | CH32M103G8R6 | [en](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QSOP28.png) |
 
 ## Product comparison
 
@@ -194,41 +207,50 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 
 | Series | Field | Register | Bits | Values | Reset |
 |---|---|---|---|---|---|
-| CH32L103 | CAN_RM | PCFR1 | 13;14 | 1;2 |  |
-| CH32L103 | I2C1_RM | PCFR1 | 1 | 0;2;3 | 0 |
-| CH32L103 | SPI1_RM | PCFR1 | 0 | 0;1;2;3 | 0 |
-| CH32L103 | TIM1_RM | PCFR1 | 6;7 | 0;1;2;3;4 |  |
-| CH32L103 | TIM2_RM | PCFR1 | 8;9 | 1;2 |  |
-| CH32L103 | TIM3_RM | PCFR1 | 10 | 0;1 | 0 |
-| CH32L103 | TIM4_RM | PCFR1 | 12 | 0;1 | 0 |
-| CH32L103 | USART1_RM | PCFR1 | 2 | 0;1;2;3;4 | 0 |
-| CH32L103 | USART2_RM | PCFR1 | 3 | 0;1;3 | 0 |
-| CH32L103 | USART3_RM | PCFR1 | 4;5 | 0;2;3 |  |
-| CH32M103 | I2C1_RM | PCFR1 | 1 | 0;2;3 | 0 |
-| CH32M103 | SPI1_RM | PCFR1 | 0 | 0;1;2;3 | 0 |
-| CH32M103 | TIM1_RM | PCFR1 | 6;7 | 0;1;2;3;4 |  |
-| CH32M103 | TIM2_RM | PCFR1 | 8;9 | 1;2 |  |
-| CH32M103 | TIM3_RM | PCFR1 | 10 | 0;1 | 0 |
-| CH32M103 | TIM4_RM | PCFR1 | 12 | 0;1 | 0 |
-| CH32M103 | USART1_RM | PCFR1 | 2 | 0;1;2;3;4 | 0 |
-| CH32M103 | USART2_RM | PCFR1 | 3 | 0;1;3 | 0 |
+| CH32L103 | CAN_RM | PCFR1 | PCFR1:13;PCFR1:14 | 0;2;3 |  |
+| CH32L103 | I2C1_RM | PCFR1\|PCFR2 | PCFR1:1;PCFR2:23 | 0;2;3 | 0 |
+| CH32L103 | LPTIM_RM | PCFR2 | PCFR2:25 | 0;1 | 0 |
+| CH32L103 | SPI1_RM | PCFR1\|PCFR2 | PCFR1:0;PCFR2:24 | 0;1;2;3 | 0 |
+| CH32L103 | TIM1_RM | PCFR1\|PCFR2 | PCFR1:6;PCFR1:7;PCFR2:22 | 0;1;2;3;4;5 | 0 |
+| CH32L103 | TIM2_RM | PCFR1\|PCFR2 | PCFR1:8;PCFR1:9;PCFR2:21 | 0;1;2;3;4;5;7 | 0 |
+| CH32L103 | TIM3_RM | PCFR1 | PCFR1:10 | 0;1 | 0 |
+| CH32L103 | TIM4_RM | PCFR1 | PCFR1:12 | 0;1 | 0 |
+| CH32L103 | USART1_RM | PCFR1\|PCFR2 | PCFR1:2;PCFR2:19;PCFR2:20 | 0;1;2;3;4;5 | 0 |
+| CH32L103 | USART2_RM | PCFR1\|PCFR2 | PCFR1:3;PCFR2:18 | 0;1;2;3 | 0 |
+| CH32L103 | USART3_RM | PCFR1 | PCFR1:4;PCFR1:5 | 0;2;3 |  |
+| CH32L103 | USART4_RM | PCFR2 | PCFR2:16 | 0;1 | 0 |
+| CH32M103 | CAN_RM | PCFR1 | PCFR1:13;PCFR1:14 | 0;2 |  |
+| CH32M103 | I2C1_RM | PCFR1\|PCFR2 | PCFR1:1;PCFR2:23 | 0;2;3 | 0 |
+| CH32M103 | LPTIM_RM | PCFR2 | PCFR2:25 | 0;1 | 0 |
+| CH32M103 | SPI1_RM | PCFR1\|PCFR2 | PCFR1:0;PCFR2:24 | 0;1;2;3 | 0 |
+| CH32M103 | TIM1_RM | PCFR1\|PCFR2 | PCFR1:6;PCFR1:7;PCFR2:22 | 0;1;2;3;4;5 | 0 |
+| CH32M103 | TIM2_RM | PCFR1\|PCFR2 | PCFR1:8;PCFR1:9;PCFR2:21 | 0;1;2;3;4;5;7 | 0 |
+| CH32M103 | TIM3_RM | PCFR1 | PCFR1:10 | 0;1 | 0 |
+| CH32M103 | TIM4_RM | PCFR1 | PCFR1:12 | 0;1 | 0 |
+| CH32M103 | USART1_RM | PCFR1\|PCFR2 | PCFR1:2;PCFR2:19;PCFR2:20 | 0;1;2;3;4;5 | 0 |
+| CH32M103 | USART2_RM | PCFR1\|PCFR2 | PCFR1:3;PCFR2:18 | 0;1;2;3 | 0 |
+| CH32M103 | USART3_RM | PCFR1 | PCFR1:4;PCFR1:5 | 0;2;3 |  |
+| CH32M103 | USART4_RM | PCFR2 | PCFR2:16 | 0;1 | 0 |
 
 </details>
+
+## Block diagrams
+
+### CH32L103
+<img src="image/architecture_CH32L103.png" alt="CH32L103 block diagram" />
+
+### CH32M103
+<img src="image/architecture_CH32M103.png" alt="CH32M103 block diagram" />
 
 ## Errata
 
 - CH32L103K8U and CH32L103F8U6 have a built-in 5.1kΩ pull-down resistor that is forced on in standby mode; standby current increases by about 5uA and the pull-down configuration note in the datasheet is not needed. *(applies: CH32L103; 5th-to-last digit of lot number = 1 (CH32L103K8U/F8U6))*
 
-## Diagrams
+## EVT examples
 
-### system CH32L103
-<img src="image/system_CH32L103.png" />
+111 routines in [EVT/EXAM](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM):
 
-### product CH32L103
-<img src="image/product_CH32L103.jpg" />
-
-### architecture CH32L103
-<img src="image/architecture_CH32L103.png" />
+[ADC](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/ADC) 8 · [APPLICATION](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/APPLICATION) 2 · [CAN](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/CAN) 5 · [DMA](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/DMA) 2 · [I2C](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/I2C) 6 · [IAP](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/IAP) 1 · [INT](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/INT) 2 · [LPTIM](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/LPTIM) 2 · [OPA](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/OPA) 9 · [PMP](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/PMP) 1 · [PWR](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/PWR) 8 · [RCC](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/RCC) 4 · [RunInRam_LP](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/RunInRam_LP) 4 · [SDI_Printf](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/SDI_Printf) 1 · [SPI](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/SPI) 6 · [TIM](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/TIM) 13 · [TOUCHKEY](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/TOUCHKEY) 6 · [USART](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/USART) 10 · [USB](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/USB) 17 · [USBPD](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/USBPD) 4
 
 ---
 Data: [ch32-device-data](https://github.com/ch32-riscv-ug/ch32-device-data) (tables/ -- each value carries its evidence and confidence there).
