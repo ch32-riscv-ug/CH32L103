@@ -8,10 +8,12 @@ Programming and debug: **2-wire SDI** (WCH-Link, `Serial Debug Interface`).
 
 ### Debug / serial defaults
 
+Where these land **without writing a remap register**. SWD is live at reset; the UART pads are not -- the pin must still be put into alternate-function mode. See `route` in tables/README.ja.md.
+
 | Series | SWDIO | SWCLK | UART TX | UART RX |
 |---|---|---|---|---|
 | CH32L103 | PA13 | PA14 | PA9 (USART1); PA2 (USART2) | PA10 (USART1); PA3 (USART2) |
-| CH32M103 | - | - | PA2 (USART2); PB10 (USART3) | PA3 (USART2); PB11 (USART3) |
+| CH32M103 | PA13 | PA14 | PA2 (USART2); PB10 (USART3) | PA3 (USART2); PB11 (USART3) |
 
 ## Series
 
@@ -85,7 +87,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | PA10 | I/O | 31 | - | 18 | 26 | 20 | 20 | UART RX (USART1) |
 | PA11 | I/O | 32 | 17 | 17 | 27 | 21 | 21 |  |
 | PA12 | I/O | 33 | 18 | 16 | 28 | 22 | 22 |  |
-| PA13 | I/O | 34 | 19 | 17 | - | 23 | 23 | SWDIO |
+| PA13 | I/O | 34 | 19 | 17 | 28 | 23 | 23 | SWDIO |
 | PA14 | I/O | 37 | 20 | 16 | 1 | 24 | 24 | SWCLK |
 | PA15 | I/O | 38 | - | - | - | 25 | 25 |  |
 | PB0 | I/O/A | 18 | - | 8 | 16 | 14 | 14 | UART TX (USART4) |
@@ -96,7 +98,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | PB5 | I/O/A | 41 | - | - | 1 | 28 | 28 |  |
 | PB6 | I/O/A | 42 | 19 | 11 | 2 | 29 | 29 |  |
 | PB7 | I/O/A | 43 | 20 | 18 | 3 | 30 | 30 |  |
-| PB8 | I/O/A | 45 | - | - | 5 | 32 | 32 |  |
+| PB8 | I/O/A | 45 | 1 | - | 5 | 32 | 32 |  |
 | PB9 | I/O | 46 | - | - | - | 31 | 31 |  |
 | PB10 | I/O/A | 21 | - | 9 | 18 | - | - | UART TX (USART3) |
 | PB11 | I/O/A | 22 | - | 10 | 19 | - | - | UART RX (USART3) |
@@ -177,14 +179,23 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | PA7 | I/O/A | 6 |  |
 | PA11 | I/O | 21 |  |
 | PA12 | I/O | 22 |  |
+| PA13 | I/O | 21 | SWDIO |
+| PA14 | I/O | 22 | SWCLK |
 | PB0 | I/O/A | 7 | UART TX (USART4) |
 | PB1 | I/O/A | 8 | UART RX (USART4) |
 | PB3 | I/O/A | 23 |  |
+| PB5 | I/O/A | 8 |  |
 | PB6 | I/O/A | 24 |  |
 | PB7 | I/O/A | 25 |  |
 | PB8 | I/O/A | 26 |  |
 | PB10 | I/O/A | 9 | UART TX (USART3) |
 | PB11 | I/O/A | 10 | UART RX (USART3) |
+| HO1 (PA8) | O | 15 |  |
+| HO2 (PA9) | O | 17 |  |
+| HO3 (PA10) | O | 19 |  |
+| LO1 (PB13) | O | 16 |  |
+| LO2 (PB14) | O | 18 |  |
+| LO3 (PB15) | O | 20 |  |
 | PA0-WKUP | I/O/A | 27 |  |
 | VDD | P | 11 |  |
 | VHREG | P | 13 |  |
@@ -204,9 +215,12 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | PA7 | ADC_IN7, OPA_N5, OPA_P3, SPI1_MOSI, TIM3_CH2 | TIM1_CH1N, USART4_CTS | TIM1_CH2 | TIM1_CH2 | - | - | - |
 | PA11 | CAN1_RX, TIM1_CH4, USART1_CTS, USBDM | TIM1_CH4, USART1_CTS | USART2_TX | USART2_RX | - | - | - |
 | PA12 | CAN1_TX, TIM1_ETR, USART1_RTS, USBDP | TIM1_ETR, USART1_RTS | I2C1_SDA, SPI1_NSS, USART2_RX | USART2_TX | TIM1_BKIN | TIM1_BKIN, TIM2_CH1_ETR, USART1_RX | TIM2_CH1_ETR |
+| PA13 | - | - | I2C1_SCL, TIM1_BKIN, USART1_RTS | TIM1_BKIN | USART1_RTS | TIM1_ETR | - |
+| PA14 | - | - | TIM1_CH3 | TIM1_CH3 | TIM1_CH1N, USART1_CTS | TIM1_CH1N | - |
 | PB0 | ADC_IN8, CMP1_OUT0, OPA_O4, OPA_P1, TIM3_CH3, USART4_TX | TIM1_CH2N, TIM3_CH3 | TIM1_CH2N | TIM1_CH2N | - | - | - |
 | PB1 | ADC_IN9, CMP1_N0, OPA_O1, TIM3_CH4, USART4_RX | TIM1_CH3N, TIM3_CH4 | TIM1_CH4 | TIM1_CH4 | TIM1_CH2N | TIM1_CH1 | - |
 | PB3 | CMP1_N1, CMP2_N0, CMP3_N0, USART4_CTS | SPI1_SCK, TIM2_CH2 | - | TIM2_CH2 | - | - | - |
+| PB5 | CMP2_OUT0, CMP3_P0, I2C1_SMBA | LPTIM_CH1, SPI1_MOSI, TIM3_CH2, USART4_RX | I2C1_SMBA | I2C1_SMBA | - | - | - |
 | PB6 | CC1, CMP2_P1, I2C1_SCL, TIM4_CH1 | LPTIM_ETR, USART1_TX | SPI1_SCK, TIM1_ETR | SPI1_SCK | TIM1_ETR | TIM1_CH3, USART1_CK | - |
 | PB7 | CC2, CMP2_N1, I2C1_SDA, TIM4_CH2 | LPTIM_CH2, USART1_RX | SPI1_MOSI | SPI1_MOSI, USART1_CTS | TIM1_CH1 | TIM1_CH3N, USART1_CTS | - |
 | PB8 | CMP2_P0, TIM4_CH3 | TIM4_CH3 | CAN1_RX, SPI1_MISO | SPI1_MISO, USART1_RTS | TIM1_CH2 | TIM1_CH2, USART1_RTS | TIM2_CH2 |
@@ -220,7 +234,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 
 | Series | Field | Register | Bits | Values | Reset |
 |---|---|---|---|---|---|
-| CH32L103 | CAN_RM | PCFR1 | PCFR1:13;PCFR1:14 | 0;2;3 |  |
+| CH32L103 | CAN_RM | PCFR1 | PCFR1:13;PCFR1:14 | 0;1;2;3 | 0 |
 | CH32L103 | I2C1_RM | PCFR1\|PCFR2 | PCFR1:1;PCFR2:23 | 0;2;3 | 0 |
 | CH32L103 | LPTIM_RM | PCFR2 | PCFR2:25 | 0;1 | 0 |
 | CH32L103 | SPI1_RM | PCFR1\|PCFR2 | PCFR1:0;PCFR2:24 | 0;1;2;3 | 0 |
@@ -230,9 +244,9 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | CH32L103 | TIM4_RM | PCFR1 | PCFR1:12 | 0;1 | 0 |
 | CH32L103 | USART1_RM | PCFR1\|PCFR2 | PCFR1:2;PCFR2:19;PCFR2:20 | 0;1;2;3;4;5 | 0 |
 | CH32L103 | USART2_RM | PCFR1\|PCFR2 | PCFR1:3;PCFR2:18 | 0;1;2;3 | 0 |
-| CH32L103 | USART3_RM | PCFR1 | PCFR1:4;PCFR1:5 | 0;2;3 |  |
+| CH32L103 | USART3_RM | PCFR1 | PCFR1:4;PCFR1:5 | 0;2;3 | 0 |
 | CH32L103 | USART4_RM | PCFR2 | PCFR2:16 | 0;1 | 0 |
-| CH32M103 | CAN_RM | PCFR1 | PCFR1:13;PCFR1:14 | 0;2 |  |
+| CH32M103 | CAN_RM | PCFR1 | PCFR1:13;PCFR1:14 | 0;1;2;3 | 0 |
 | CH32M103 | I2C1_RM | PCFR1\|PCFR2 | PCFR1:1;PCFR2:23 | 0;2;3 | 0 |
 | CH32M103 | LPTIM_RM | PCFR2 | PCFR2:25 | 0;1 | 0 |
 | CH32M103 | SPI1_RM | PCFR1\|PCFR2 | PCFR1:0;PCFR2:24 | 0;1;2;3 | 0 |
@@ -242,7 +256,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | CH32M103 | TIM4_RM | PCFR1 | PCFR1:12 | 0;1 | 0 |
 | CH32M103 | USART1_RM | PCFR1\|PCFR2 | PCFR1:2;PCFR2:19;PCFR2:20 | 0;1;2;3;4;5 | 0 |
 | CH32M103 | USART2_RM | PCFR1\|PCFR2 | PCFR1:3;PCFR2:18 | 0;1;2;3 | 0 |
-| CH32M103 | USART3_RM | PCFR1 | PCFR1:4;PCFR1:5 | 0;2;3 |  |
+| CH32M103 | USART3_RM | PCFR1 | PCFR1:4;PCFR1:5 | 0;2;3 | 0 |
 | CH32M103 | USART4_RM | PCFR2 | PCFR2:16 | 0;1 | 0 |
 
 </details>
