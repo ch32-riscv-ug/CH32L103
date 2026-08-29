@@ -287,7 +287,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 |---|---|---|---|
 | CH32L103DS0.PDF | datasheet | [page](https://www.wch-ic.com/downloads/CH32L103DS0_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF) v2.1 | [page](https://www.wch.cn/downloads/CH32L103DS0_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF) v2.1 |
 | CH32L103RM.PDF | reference-manual | [page](https://www.wch-ic.com/downloads/CH32L103RM_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103RM.PDF) v2.2 | [page](https://www.wch.cn/downloads/CH32L103RM_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103RM.PDF) v2.2 |
-| CH32L103EVT.ZIP | evt | - | [page](https://www.wch.cn/downloads/CH32L103EVT_ZIP.html) [mirror](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT) v1.9 |
+| CH32L103EVT.ZIP | evt | - | [page](https://www.wch.cn/downloads/CH32L103EVT_ZIP.html) [mirror](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT) v2.0 |
 
 ### Evaluation boards
 
