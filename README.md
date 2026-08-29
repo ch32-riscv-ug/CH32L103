@@ -4,6 +4,8 @@
 
 *Generated from the mirror at commit [`0cae61d`](https://github.com/ch32-riscv-ug/CH32L103/tree/0cae61d8ed22c10e3674ffcb26790b5f06fbe19b) (2026-08-24). Newer PDFs may exist upstream; see Documents below.*
 
+[Choose a part](#product-comparison) &middot; [Pin viewer](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103) &middot; [Pin maps](#pin-maps--alternate-functions) &middot; [Errata](#errata) &middot; [Examples](#evt-examples) &middot; [Documents](#documents) &middot; [Address map](#address-map)
+
 ## Quick start
 
 Programming and debug: **2-wire SDI** (WCH-Link, `Serial Debug Interface`).
@@ -19,7 +21,7 @@ Where these land **without writing a remap register**. SWD is live at reset; the
 
 ## Series
 
-| Series | Core | ISA | Flash | SRAM | Clock | VDD | Packages | Products | Official |
+| Series | Core | ISA | Flash | SRAM | Main clock | VDD | Packages | Products | Official |
 |---|---|---|---|---|---|---|---|---|---|
 | **CH32L103** | QingKe V4C | RV32IMAC | 64K | 20K | 96 MHz | 1.8-3.6V | LQFP48,QFN20,QFN32,QSOP28,TSSOP20 | 6 | [en](https://www.wch-ic.com/products/CH32L103.html) / [zh](https://www.wch.cn/products/CH32L103.html) |
 | **CH32M103** | QingKe V4C | RV32IMAC | 64K | 20K | 96 MHz | 1.8-3.6V | QSOP28 | 1 | [en](https://www.wch-ic.com/products/CH32M103.html) / [zh](https://www.wch.cn/products/CH32M103.html) |
@@ -28,7 +30,25 @@ Where these land **without writing a remap register**. SWD is live at reset; the
 
 ### CH32L103 product comparison
 
-| | CH32L103&#8203;C8T6&#8203;(LQFP48) | CH32L103&#8203;F8P6&#8203;(TSSOP20) | CH32L103&#8203;F8U6&#8203;(QFN20) | CH32L103&#8203;G8R6&#8203;(QSOP28) | CH32L103&#8203;K8U6&#8203;(QFN32) | CH32L103&#8203;K8U7&#8203;(QFN32) |
+Only the 11 rows that differ between these 6 products; the other 14 are the same for all of them.
+
+| | [CH32L103&#8203;C8T6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103C8T6)&#8203;(LQFP48) | [CH32L103&#8203;F8P6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103F8P6)&#8203;(TSSOP20) | [CH32L103&#8203;F8U6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103F8U6)&#8203;(QFN20) | [CH32L103&#8203;G8R6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103G8R6)&#8203;(QSOP28) | [CH32L103&#8203;K8U6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103K8U6)&#8203;(QFN32) | [CH32L103&#8203;K8U7](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103K8U7)&#8203;(QFN32) |
+|---|---|---|---|---|---|---|
+| **GPIO** | 37 | 16 | 19 | 26 | 31 | 31 |
+| **Temperature** | -40..85C | -40..85C | -40..85C | -40..85C | -40..85C | -40..105C |
+| ADC | 10+3 | 9+3 | 10+3 | 10+3 | 10+3 | 10+3 |
+| Tkey | 10 | 9 | 10 | 10 | 10 | 10 |
+| CMP | 3 | CMP1 CMP2 | 3 | 3 | 3 | 3 |
+| SPI | 2 | SPI1 | 2 | 2 | SPI1 | SPI1 |
+| I2C | 2 | I2C1 | 2 | 2 | I2C1 | I2C1 |
+| CAN FD | √ | - | - | - | √ | - |
+| USB Host Device | Host Device | Device | Host Device | Host Device | Host Device | Host Device |
+| USB PD Type-C | DRP Source Sink | DRP Source Sink | DRP Source Sink Built-in Rd(1) | DRP Source Sink | DRP Source Sink Built-in Rd(1) | DRP Source Sink Built-in Rd(1) |
+| Main applications and features | General-purpose, Pin compatible | General-purpose, Pin compatible | General-purpose, pin optimized | General-purpose, motor master | General-purpose, pin optimized | General-purpose, pin optimized |
+
+<details><summary>All 25 rows</summary>
+
+| | [CH32L103&#8203;C8T6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103C8T6)&#8203;(LQFP48) | [CH32L103&#8203;F8P6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103F8P6)&#8203;(TSSOP20) | [CH32L103&#8203;F8U6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103F8U6)&#8203;(QFN20) | [CH32L103&#8203;G8R6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103G8R6)&#8203;(QSOP28) | [CH32L103&#8203;K8U6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103K8U6)&#8203;(QFN32) | [CH32L103&#8203;K8U7](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103K8U7)&#8203;(QFN32) |
 |---|---|---|---|---|---|---|
 | **Flash** | 64K | 64K | 64K | 64K | 64K | 64K |
 | **SRAM** | 20K | 20K | 20K | 20K | 20K | 20K |
@@ -56,7 +76,9 @@ Where these land **without writing a remap register**. SWD is live at reset; the
 | Rated voltage | 3.3V | 3.3V | 3.3V | 3.3V | 3.3V | 3.3V |
 | Main applications and features | General-purpose, Pin compatible | General-purpose, Pin compatible | General-purpose, pin optimized | General-purpose, motor master | General-purpose, pin optimized | General-purpose, pin optimized |
 
-## Pinouts
+</details>
+
+## Packages & pinout drawings
 
 Pinout drawings are in the datasheet (chapter *Pinouts*):
 
@@ -69,11 +91,16 @@ Pinout drawings are in the datasheet (chapter *Pinouts*):
 | QFN32 | CH32L103K8U6, CH32L103K8U7 | [en](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QFN32.png) |
 | QSOP28 | CH32M103G8R6 | [en](https://ch32-riscv-ug.github.io/CH32L103/datasheet_en/CH32L103DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32L103/datasheet_zh/CH32L103DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QSOP28.png) |
 
-## Pin definitions
+## Pin maps & alternate functions
+
+> [!NOTE]
+> These are the **pin-table superset**: the datasheet prints one pad table for every product that shares a pinout, so a pad row does not mean this part has the peripheral. Use the product comparison table above for what a given part number contains.
 
 ### CH32L103 pin map
 
 Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103) [ADC](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103&features=ADC) [I2C](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103&features=I2C) [SPI](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103&features=SPI) [SYS](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103&features=SYS) [TIM](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103&features=TIM) [UART](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103&features=UART) [USB](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103&features=USB)
+
+<details><summary><b>CH32L103 pin map</b> (44 pads x 6 products)</summary>
 
 | Pin name | Type | [CH32L103&#8203;C8T6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103C8T6)&#8203;(LQFP48) | [CH32L103&#8203;F8P6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103F8P6)&#8203;(TSSOP20) | [CH32L103&#8203;F8U6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103F8U6)&#8203;(QFN20) | [CH32L103&#8203;G8R6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103G8R6)&#8203;(QSOP28) | [CH32L103&#8203;K8U6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103K8U6)&#8203;(QFN32) | [CH32L103&#8203;K8U7](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103K8U7)&#8203;(QFN32) | Notes |
 |---|---|---|---|---|---|---|---|---|
@@ -121,6 +148,8 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | VDDA | P | 9 | 5 | - | - | - | - |  |
 | VSS | P | 23/35/47 | 15 | EP | 7 | EP | EP |  |
 | VSSA | P | 8 | - | - | - | - | - |  |
+
+</details>
 
 <details><summary><b>CH32L103 alternate functions</b></summary>
 
@@ -170,6 +199,8 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 
 Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32M103) [ADC](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32M103&features=ADC) [I2C](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32M103&features=I2C) [SPI](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32M103&features=SPI) [SYS](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32M103&features=SYS) [TIM](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32M103&features=TIM) [UART](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32M103&features=UART) [USB](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32M103&features=USB)
 
+<details><summary><b>CH32M103 pin map</b> (31 pads x 1 products)</summary>
+
 | Pin name | Type | [CH32M103&#8203;G8R6](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32M103G8R6)&#8203;(QSOP28) | Notes |
 |---|---|---|---|
 | PA1 | I/O/A | 28 |  |
@@ -203,6 +234,8 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | VHREG | P | 13 |  |
 | VHV | P | 14 |  |
 | VSS | P | 12 |  |
+
+</details>
 
 <details><summary><b>CH32M103 alternate functions</b></summary>
 
