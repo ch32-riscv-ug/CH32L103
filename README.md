@@ -2,7 +2,7 @@
 
 <!-- This file is generated from ch32-riscv-ug/ch32-device-data (index/ + evidence/ + tools/build_readme.py). Edit there, not here. -->
 
-*Generated from the mirror at commit [`0cae61d`](https://github.com/ch32-riscv-ug/CH32L103/tree/0cae61d8ed22c10e3674ffcb26790b5f06fbe19b) (2026-08-24). Newer PDFs may exist upstream; see Documents below.*
+*Generated from the mirror at commit [`8999f1c`](https://github.com/ch32-riscv-ug/CH32L103/tree/8999f1c82f50995eafb6c300358d32e2b6296c09) (2026-08-29). Newer PDFs may exist upstream; see Documents below.*
 
 [Choose a part](#product-comparison) &middot; [Pin viewer](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103) &middot; [Pin maps](#pin-maps--alternate-functions) &middot; [Errata](#errata) &middot; [Examples](#evt-examples) &middot; [Documents](#documents) &middot; [Address map](#address-map)
 
@@ -310,9 +310,9 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 
 ## EVT examples
 
-111 routines in [EVT/EXAM](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM):
+113 routines in [EVT/EXAM](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM):
 
-[ADC](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/ADC) 8 · [APPLICATION](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/APPLICATION) 2 · [CAN](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/CAN) 5 · [DMA](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/DMA) 2 · [I2C](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/I2C) 6 · [IAP](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/IAP) 1 · [INT](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/INT) 2 · [LPTIM](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/LPTIM) 2 · [OPA](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/OPA) 9 · [PMP](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/PMP) 1 · [PWR](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/PWR) 8 · [RCC](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/RCC) 4 · [RunInRam_LP](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/RunInRam_LP) 4 · [SDI_Printf](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/SDI_Printf) 1 · [SPI](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/SPI) 6 · [TIM](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/TIM) 13 · [TOUCHKEY](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/TOUCHKEY) 6 · [USART](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/USART) 10 · [USB](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/USB) 17 · [USBPD](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/USBPD) 4
+[ADC](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/ADC) 8 · [APPLICATION](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/APPLICATION) 4 · [CAN](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/CAN) 5 · [DMA](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/DMA) 2 · [I2C](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/I2C) 6 · [IAP](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/IAP) 1 · [INT](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/INT) 2 · [LPTIM](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/LPTIM) 2 · [OPA](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/OPA) 9 · [PMP](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/PMP) 1 · [PWR](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/PWR) 8 · [RCC](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/RCC) 4 · [RunInRam_LP](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/RunInRam_LP) 4 · [SDI_Printf](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/SDI_Printf) 1 · [SPI](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/SPI) 6 · [TIM](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/TIM) 13 · [TOUCHKEY](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/TOUCHKEY) 6 · [USART](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/USART) 10 · [USB](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/USB) 17 · [USBPD](https://github.com/ch32-riscv-ug/CH32L103/tree/main/EVT/EXAM/USBPD) 4
 
 ## Documents
 
@@ -328,7 +328,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 - board-manual:zh: [CH32L103评估板说明书.pdf](https://github.com/ch32-riscv-ug/CH32L103/blob/main/EVT/PUB/CH32L103%E8%AF%84%E4%BC%B0%E6%9D%BF%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)
 - schematic-pdf: [CH32L103SCH.pdf](https://github.com/ch32-riscv-ug/CH32L103/blob/main/EVT/PUB/CH32L103SCH.pdf)
 
-5 board schematics under `EVT/PUB/SCHPCB/`: `CH32L103C8T6-R0`, `CH32L103F8P6-R0`, `CH32L103F8U6-R0`, `CH32L103G8R6-R0`, `CH32L103K8U6-R0`
+5 board schematics under `EVT/PUB/SCHPCB/`: `CH32L103C8T-R0`, `CH32L103F8P-R0`, `CH32L103F8U-R0`, `CH32L103G8R-R0`, `CH32L103K8U-R0`
 
 ## Reference
 
