@@ -2,7 +2,7 @@
 
 <!-- This file is generated from ch32-riscv-ug/ch32-device-data (index/ + evidence/ + tools/build_readme.py). Edit there, not here. -->
 
-*Generated from the mirror at commit [`8999f1c`](https://github.com/ch32-riscv-ug/CH32L103/tree/8999f1c82f50995eafb6c300358d32e2b6296c09) (2026-08-29). Newer PDFs may exist upstream; see Documents below.*
+*Generated from the mirror at commit [`8a46892`](https://github.com/ch32-riscv-ug/CH32L103/tree/8a46892235e7d61be07564b942f828df5460248d) (2026-09-01). Newer PDFs may exist upstream; see Documents below.*
 
 [Choose a part](#product-comparison) &middot; [Pin viewer](https://ch32-riscv-ug.github.io/ch32-device-data/pins.html?chip=CH32L103) &middot; [Pin maps](#pin-maps--alternate-functions) &middot; [Errata](#errata) &middot; [Examples](#evt-examples) &middot; [Documents](#documents) &middot; [Address map](#address-map)
 
