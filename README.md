@@ -304,6 +304,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 
 ## Errata
 
+- Only UNIID1 and UNIID2 (the low 64 bits) of the unique ID differ between chips; UNIID3 is not unique although the reference manual describes a 96-bit unique identifier. UNIID3 reads 0xFFFFFFFF on the measured V003, V006, X035 and L103 chips, and the same 0xE339E339 on a V203 and a V307. Use UNIID1|UNIID2 as the chip's unique value. *(applies: CH32L103, CH32V003, CH32V006, CH32V203, CH32V307, CH32X035; )*
 - CH32L103K8U and CH32L103F8U6 have a built-in 5.1kΩ pull-down resistor that is forced on in standby mode; standby current increases by about 5uA and the pull-down configuration note in the datasheet is not needed. *(applies: CH32L103; 5th-to-last digit of lot number = 1 (CH32L103K8U/F8U6))*
 
 ## EVT examples
