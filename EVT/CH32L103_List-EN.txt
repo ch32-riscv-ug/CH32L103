@@ -25,8 +25,9 @@ Directory
   |      |      |      |-- APPLICATION
   |      |      |      |      |-- WS2812_LED: Operating WS2812 via SPI\PWM Routine
   |      |      |      |      |-- PD_Electric_Fan: electric fan routine
-  |      |      |      |      |-- WUI
-  |      |      |      |      |      |-- wui_demo: gui lcd demo
+  |      |      |      |      |-- WCHGUI
+  |      |      |      |      |      |-- WCH-GUI-FLASH: GUI FLASH
+  |      |      |      |      |      |-- WCH-GUI-LIVE: GUI LIVE
   |      |      |      |-- BKP: BKP routine
   |      |      |      |-- CAN  
   |      |      |      |      |-- CANFD: CANFD normal mode, standard frame, and extended frame data routines

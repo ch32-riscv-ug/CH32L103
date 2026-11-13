@@ -25,8 +25,9 @@ https://wch.cn
   |      |      |      |-- APPLICATION
   |      |      |      |      |-- WS2812_LED：通过SPI\PWM操作WS2812例程
   |      |      |      |      |-- PD_Electric_Fan：风扇应用例程
-  |      |      |      |      |-- WUI
-  |      |      |      |      |      |-- wui_demo: gui lcd 例程
+  |      |      |      |      |-- WCHGUI
+  |      |      |      |      |      |-- WCH-GUI-FLASH: GUI 内外部FLASH
+  |      |      |      |      |      |-- WCH-GUI-LIVE: GUI 屏幕显示
   |      |      |      |-- BKP：BKP例程
   |      |      |      |-- CAN  
   |      |      |      |      |-- CANFD：CANFD正常模式、标准帧和扩展帧数据例程
