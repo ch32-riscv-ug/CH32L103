@@ -1,5 +1,5 @@
 
-Nanjing Qinheng Microelectronics Co., Ltd. 2026.10
+Nanjing Qinheng Microelectronics Co., Ltd. 2026.11
 Please check our website for the latest information.
 https://wch-ic.com
 
@@ -25,9 +25,6 @@ Directory
   |      |      |      |-- APPLICATION
   |      |      |      |      |-- WS2812_LED: Operating WS2812 via SPI\PWM Routine
   |      |      |      |      |-- PD_Electric_Fan: electric fan routine
-  |      |      |      |      |-- WCHGUI
-  |      |      |      |      |      |-- WCH-GUI-FLASH: GUI FLASH
-  |      |      |      |      |      |-- WCH-GUI-LIVE: GUI LIVE
   |      |      |      |-- BKP: BKP routine
   |      |      |      |-- CAN  
   |      |      |      |      |-- CANFD: CANFD normal mode, standard frame, and extended frame data routines
@@ -43,6 +40,23 @@ Directory
   |      |      |      |-- FLASH: FLASH erase / read / write, and fast programming
   |      |      |      |-- FreeRTOS: FreeRTOS migration routine 
   |      |      |      |-- GPIO: GPIO routine
+  |      |      |      |-- GUI
+  |      |      |      |      |-- WCH-GUI-FLASH：WCH-GUI-FLASH routine(Low CPU usage) 
+  |      |      |      |      |      |--GUI_ExternalFlash: WCH-GUI-FLASH use external flash routine
+  |      |      |      |      |      |--GUI_Onflash：WCH-GUI-FLASH use internal flash routine
+  |      |      |      |      |      |--WCHGUI_Lib: WCH-GUI-FLASH core library (with low CPU usage)
+  |      |      |      |      |      |--DOC
+  |      |      |      |      |      |      |--Instructions for downloading external FLASH.pdf
+  |      |      |      |      |      |      |--WCHGUI software documentation.pdf
+  |      |      |      |      |      |--CH32L103-WUI-R1-1v2.pdf
+  |      |      |      |      |      |--CH32L103-WUI-R1-1v2.schdoc
+  |      |      |      |      |      |--CH32L103-WUI-R1-1v2.kicad_sch
+  |      |      |      |      |-- WCH-GUI-LIVE：WCH-GUI-LIVE routine(Save storage resources)
+  |      |      |      |      |      |--DEMO1: WCH-GUI-LIVE basic routine
+  |      |      |      |      |      |--DEMO2: WCH-GUI-LIVE complex routine
+  |      |      |      |      |      |--WVUI_Lib: WCH-GUI-LIVE core library(with save storage resources)
+  |      |      |      |      |      |--DOC
+  |      |      |      |      |      |      |--WCH-GUI-Live library Reference Manual.pdf 
   |      |      |      |-- HarmonyOS: HarmonyOS migration routine 
   |      |      |      |-- I2C
   |      |      |      |      |-- I2C_7bit_Mode: 7-bit address mode, master / slave mode, transceiver routine

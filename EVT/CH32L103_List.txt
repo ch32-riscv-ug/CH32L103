@@ -1,5 +1,5 @@
 
-南京沁恒微电子股份有限公司 2026.10
+南京沁恒微电子股份有限公司 2026.11
 最新资料请到我们的网站上查询
 https://wch.cn
 
@@ -25,9 +25,6 @@ https://wch.cn
   |      |      |      |-- APPLICATION
   |      |      |      |      |-- WS2812_LED：通过SPI\PWM操作WS2812例程
   |      |      |      |      |-- PD_Electric_Fan：风扇应用例程
-  |      |      |      |      |-- WCHGUI
-  |      |      |      |      |      |-- WCH-GUI-FLASH: GUI 内外部FLASH
-  |      |      |      |      |      |-- WCH-GUI-LIVE: GUI 屏幕显示
   |      |      |      |-- BKP：BKP例程
   |      |      |      |-- CAN  
   |      |      |      |      |-- CANFD：CANFD正常模式、标准帧和扩展帧数据例程
@@ -43,6 +40,23 @@ https://wch.cn
   |      |      |      |-- FLASH：FLASH的擦/读/写，以及快速编程
   |      |      |      |-- FreeRTOS：FreeRTOS移植例程  
   |      |      |      |-- GPIO：GPIO例程
+  |      |      |      |-- GUI
+  |      |      |      |      |-- WCH-GUI-FLASH：WCH-GUI-FLASH例程(CPU占用率低) 
+  |      |      |      |      |      |--GUI_ExternalFlash: WCH-GUI-FLASH 使用外部flash的例程
+  |      |      |      |      |      |--GUI_Onflash：WCH-GUI-FLASH 使用内部flash的例程
+  |      |      |      |      |      |--WCHGUI_Lib: WCH-GUI-FLASH 的核心库(CPU占用率低)
+  |      |      |      |      |      |--DOC
+  |      |      |      |      |      |      |--片外FLASH下载操作说明.pdf
+  |      |      |      |      |      |      |--沁恒WCHGUI软件说明文档.pdf
+  |      |      |      |      |      |--CH32L103-WUI-R1-1v2.pdf
+  |      |      |      |      |      |--CH32L103-WUI-R1-1v2.schdoc
+  |      |      |      |      |      |--CH32L103-WUI-R1-1v2.kicad_sch
+  |      |      |      |      |-- WCH-GUI-LIVE：WCH-GUI-LIVE例程(节省存储资源) 
+  |      |      |      |      |      |--DEMO1: WCH-GUI-LIVE的基础例程
+  |      |      |      |      |      |--DEMO2: WCH-GUI-LIVE的复杂例程
+  |      |      |      |      |      |--WVUI_Lib: WCH-GUI-LIVE 的核心库(节省存储资源)
+  |      |      |      |      |      |--DOC
+  |      |      |      |      |      |      |--WCH-GUI-Live库参考手册.pdf 
   |      |      |      |-- HarmonyOS：HarmonyOS移植例程 
   |      |      |      |-- I2C
   |      |      |      |      |-- I2C_7bit_Mode：7位地址模式，Master/Slave 模式收发例程
