@@ -57,8 +57,8 @@
       "sources": {
         "en": {
           "file_id": 387,
-          "version": "2.2",
-          "scope": "CH32L103"
+          "version": "2.3",
+          "scope": "CH32L103C8T6, CH32L103F8P6, CH32L103F8U6, CH32L103G8R6, CH32L103K8U6, CH32L103K8U7, CH32M103G8R6"
         },
         "zh": {
           "file_id": 453,
