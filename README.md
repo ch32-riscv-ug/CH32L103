@@ -314,7 +314,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 
 | Series | Field | Register | Bits | Values | Reset |
 |---|---|---|---|---|---|
-| CH32L103 | CAN_RM | PCFR1 | PCFR1:13;PCFR1:14 | 0;1;2;3 | 0 |
+| CH32L103 | CAN_RM | PCFR1 | PCFR1:13;PCFR1:14 | 0;2;3 | 0 |
 | CH32L103 | I2C1_RM | PCFR1\|PCFR2 | PCFR1:1;PCFR2:23 | 0;2;3 | 0 |
 | CH32L103 | LPTIM_RM | PCFR2 | PCFR2:25 | 0;1 | 0 |
 | CH32L103 | SPI1_RM | PCFR1\|PCFR2 | PCFR1:0;PCFR2:24 | 0;1;2;3 | 0 |
@@ -326,7 +326,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | CH32L103 | USART2_RM | PCFR1\|PCFR2 | PCFR1:3;PCFR2:18 | 0;1;2;3 | 0 |
 | CH32L103 | USART3_RM | PCFR1 | PCFR1:4;PCFR1:5 | 0;2;3 | 0 |
 | CH32L103 | USART4_RM | PCFR2 | PCFR2:16 | 0;1 | 0 |
-| CH32M103 | CAN_RM | PCFR1 | PCFR1:13;PCFR1:14 | 0;1;2;3 | 0 |
+| CH32M103 | CAN_RM | PCFR1 | PCFR1:13;PCFR1:14 | 0;2;3 | 0 |
 | CH32M103 | I2C1_RM | PCFR1\|PCFR2 | PCFR1:1;PCFR2:23 | 0;2;3 | 0 |
 | CH32M103 | LPTIM_RM | PCFR2 | PCFR2:25 | 0;1 | 0 |
 | CH32M103 | SPI1_RM | PCFR1\|PCFR2 | PCFR1:0;PCFR2:24 | 0;1;2;3 | 0 |
